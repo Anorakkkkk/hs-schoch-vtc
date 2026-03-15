@@ -158,3 +158,91 @@
 
 </body>
 </html>
+
+<section id="apply-form" class="section section-alt">
+
+<div class="container narrow">
+
+<span class="section-label">Application</span>
+
+<h2>Apply to HS Schoch Virtual</h2>
+
+<p class="section-text">
+Interested in joining HS Schoch Virtual? Fill out the application below.
+Our team will review your application and contact you via Discord.
+</p>
+
+<form action="https://formspree.io/f/mzdjajwk" method="POST" class="apply-form">
+
+<div class="form-grid">
+
+<div class="form-group">
+<label>Name</label>
+<input type="text" name="name" required>
+</div>
+
+<div class="form-group">
+<label>Age</label>
+<input type="number" name="age" required>
+</div>
+
+<div class="form-group">
+<label>Country</label>
+<input type="text" name="country" required>
+</div>
+
+<div class="form-group">
+<label>Discord Name / ID</label>
+<input type="text" name="discord" placeholder="ExampleUser#1234" required>
+</div>
+
+<div class="form-group">
+<label>TruckersMP Account Link</label>
+<input type="url" name="tmp_account" placeholder="https://truckersmp.com/user/..." required>
+</div>
+
+<div class="form-group">
+<label>Steam Profile Link</label>
+<input type="url" name="steam_account" placeholder="https://steamcommunity.com/id/..." required>
+</div>
+
+</div>
+
+<div class="form-group">
+<label>Previous VTCs</label>
+<textarea name="previous_vtcs" rows="3" placeholder="List any previous VTCs you were part of"></textarea>
+</div>
+
+<div class="form-group">
+<label>Which games do you play?</label>
+
+<div class="checkbox-group">
+
+<label>
+<input type="checkbox" name="games[]" value="Euro Truck Simulator 2">
+Euro Truck Simulator 2
+</label>
+
+<label>
+<input type="checkbox" name="games[]" value="American Truck Simulator">
+American Truck Simulator
+</label>
+
+</div>
+
+</div>
+
+<div class="form-group">
+<label>Application Message</label>
+<textarea name="application_text" rows="6" placeholder="Tell us why you want to join HS Schoch Virtual..." required></textarea>
+</div>
+
+<button type="submit" class="btn btn-primary">
+Submit Application
+</button>
+
+</form>
+
+</div>
+
+</section>
