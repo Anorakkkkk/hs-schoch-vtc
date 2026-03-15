@@ -1,48 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>HS Schoch Virtual</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HS Schoch Virtual</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<header class="hero">
+  <nav class="navbar">
+    <div class="nav-logo">HS Schoch Virtual</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#events">Events</a>
+      <a href="#recruitment">Recruitment</a>
+      <a href="#discord">Discord</a>
+    </div>
+  </nav>
 
-<h1>HS Schoch Virtual</h1>
-<p>Professional TruckersMP Virtual Trucking Company</p>
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tag">EURO TRUCK SIMULATOR 2 · TRUCKERSMP · VTC</p>
+      <h1>HS Schoch Virtual</h1>
+      <p class="hero-text">
+        Professional TruckersMP Virtual Trucking Company with convoy events,
+        community spirit and a modern ETS2 experience.
+      </p>
 
-<div class="buttons">
-<a href="#" class="btn">Join VTC</a>
-<a href="#" class="btn discord">Discord</a>
-</div>
+      <div class="hero-buttons">
+        <a href="#recruitment" class="btn btn-primary">Join VTC</a>
+        <a href="https://discord.gg/" class="btn btn-secondary" target="_blank">Discord</a>
+      </div>
+    </div>
+  </header>
 
-</header>
+  <section class="stats">
+    <div class="stat-card">
+      <h3>Professional</h3>
+      <p>Modern and organized VTC presentation</p>
+    </div>
+    <div class="stat-card">
+      <h3>Convoys</h3>
+      <p>Regular public and private event participation</p>
+    </div>
+    <div class="stat-card">
+      <h3>Community</h3>
+      <p>Friendly drivers, teamwork and activity</p>
+    </div>
+  </section>
 
-<section class="about">
-<h2>About Us</h2>
-<p>
-HS Schoch Virtual is a professional ETS2 Virtual Trucking Company focused on convoys,
-community and realistic trucking.
-</p>
-</section>
+  <section id="about" class="section">
+    <div class="section-header">
+      <span class="section-kicker">ABOUT US</span>
+      <h2>Driven by passion for virtual trucking</h2>
+    </div>
+    <div class="content-card">
+      <p>
+        HS Schoch Virtual is a professional ETS2 Virtual Trucking Company inspired
+        by a realistic trucking style and a strong community mindset. We focus on
+        high-quality convoys, clean presentation and an enjoyable TruckersMP experience.
+      </p>
+    </div>
+  </section>
 
-<section class="events">
-<h2>Upcoming Convoys</h2>
-<p>Monthly Convoys and Special Events on TruckersMP.</p>
-</section>
+  <section id="events" class="section">
+    <div class="section-header">
+      <span class="section-kicker">EVENTS</span>
+      <h2>Upcoming Convoys</h2>
+    </div>
 
-<section class="recruitment">
-<h2>Become a Driver</h2>
-<p>Join our team and drive with us in ETS2 convoys.</p>
-<a href="#" class="btn">Apply Now</a>
-</section>
+    <div class="card-grid">
+      <div class="content-card event-card">
+        <span class="badge">Monthly Convoy</span>
+        <h3>HS Schoch Monthly Drive</h3>
+        <p>Join our regular community convoy with clean driving and a professional setup.</p>
+        <div class="event-meta">Date: Coming soon</div>
+      </div>
 
-<section class="discord">
-<h2>Join our Discord</h2>
-<a href="#" class="btn discord">Join Server</a>
-</section>
+      <div class="content-card event-card">
+        <span class="badge">TruckersMP</span>
+        <h3>Public Event Participation</h3>
+        <p>We regularly attend selected TruckersMP events and represent our VTC on the road.</p>
+        <div class="event-meta">Server: TMP Event Server</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="recruitment" class="section">
+    <div class="section-header">
+      <span class="section-kicker">RECRUITMENT</span>
+      <h2>Become a Driver</h2>
+    </div>
+
+    <div class="card-grid">
+      <div class="content-card">
+        <h3>Why join us?</h3>
+        <p>
+          Become part of a professional and modern VTC with convoy participation,
+          team spirit and a clean public image.
+        </p>
+      </div>
+
+      <div class="content-card">
+        <h3>Requirements</h3>
+        <ul class="requirements">
+          <li>Euro Truck Simulator 2</li>
+          <li>TruckersMP access</li>
+          <li>Friendly and respectful behaviour</li>
+          <li>Interest in convoys and VTC activity</li>
+        </ul>
+        <a href="#" class="btn btn-primary apply-btn">Apply Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="discord" class="section">
+    <div class="section-header">
+      <span class="section-kicker">COMMUNITY</span>
+      <h2>Join our Discord</h2>
+    </div>
+
+    <div class="content-card discord-box">
+      <p>
+        Stay connected with our drivers, get convoy updates and become part of the HS Schoch Virtual community.
+      </p>
+      <a href="https://discord.gg/" class="btn btn-secondary" target="_blank">Join Discord</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 HS Schoch Virtual. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
