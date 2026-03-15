@@ -673,7 +673,9 @@ a {
 }
 
 .brand img{
-height:70px;
-width:auto;
-transform:scale(2);
+height:50px;
+width:50px;
+object-fit:cover;
+border-radius:50%;
+box-shadow:0 0 10px rgba(0,0,0,0.4);
 }
