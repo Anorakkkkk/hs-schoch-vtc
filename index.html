@@ -1,233 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>HS Schoch Virtual</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HS Schoch Virtual</title>
+  <meta
+    name="description"
+    content="HS Schoch Virtual - Professional ETS2 & ATS Virtual Trucking Company."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
-<nav class="navbar">
-
-<div class="logo">HS Schoch Virtual</div>
-
-<ul class="nav-links">
-<li><a href="#about">About</a></li>
-<li><a href="#fleet">Fleet</a></li>
-<li><a href="#events">Events</a></li>
-<li><a href="#apply">Apply</a></li>
-<li><a href="https://discord.gg/n6TF2xG2eK" target="_blank">Discord</a></li>
-</ul>
-
-</nav>
-
-
-<header class="hero">
-
-<div class="hero-overlay"></div>
-
-<div class="hero-content">
-
-<span class="hero-tag">TruckersMP • ETS2 • Virtual Trucking Company</span>
-
-<h1>HS Schoch Virtual</h1>
-
-<p>
-Professional convoy driving<br>
-Community events • Modern VTC experience
-</p>
-
-<div class="hero-buttons">
-
-<a class="btn primary" href="#apply">
-Apply Now
-</a>
-
-<a class="btn discord" href="https://discord.gg/n6TF2xG2eK" target="_blank">
-Join Discord
-</a>
-
-</div>
-
-</div>
-
-</header>
-
-
-
-<section id="about" class="section">
-
-<h2>About HS Schoch Virtual</h2>
-
-<p class="section-text">
-
-HS Schoch Virtual is a modern ETS2 Virtual Trucking Company focused on
-professional convoy driving, community events and a clean VTC identity.
-
-</p>
-
-
-<div class="features">
-
-<div class="feature">
-
-<h3>Professional</h3>
-
-<p>
-Modern VTC presentation and organized convoys
-</p>
-
-</div>
-
-<div class="feature">
-
-<h3>Convoys</h3>
-
-<p>
-Public events and future monthly convoys
-</p>
-
-</div>
-
-<div class="feature">
-
-<h3>Community</h3>
-
-<p>
-Friendly drivers and teamwork
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<section id="fleet" class="section dark">
-
-<h2>Our Fleet</h2>
-
-<div class="fleet-grid">
-
-<div class="fleet-card">
-<h3>Scania S</h3>
-<p>Premium convoy truck with strong road presence.</p>
-</div>
-
-<div class="fleet-card">
-<h3>MAN TGX</h3>
-<p>Reliable and comfortable long distance truck.</p>
-</div>
-
-<div class="fleet-card">
-<h3>DAF XG</h3>
-<p>Modern truck designed for long haul convoys.</p>
-</div>
-
-</div>
-
-</section>
-
-
-
-<section id="events" class="section">
-
-<h2>Upcoming Event</h2>
-
-<div class="event-card">
-
-<h3>HS Schoch Community Convoy</h3>
-
-<p>
-Date: Coming Soon<br>
-Server: TruckersMP Event Server
-</p>
-
-<a class="btn primary" href="https://discord.gg/n6TF2xG2eK">
-More Info
-</a>
-
-</div>
-
-</section>
-
-
-
-<section id="apply" class="section dark">
-
-<h2>Apply to HS Schoch Virtual</h2>
-
-<p class="section-text">
-
-Interested in joining our VTC? Fill out the application below.
-
-</p>
-
-
-<form action="https://formspree.io/f/mzdjajwk" method="POST" class="apply-form">
-
-<div class="form-grid">
-
-<input type="text" name="name" placeholder="Name" required>
-
-<input type="number" name="age" placeholder="Age" required>
-
-<input type="text" name="country" placeholder="Country" required>
-
-<input type="text" name="discord" placeholder="Discord Name / ID" required>
-
-<input type="url" name="tmp" placeholder="TruckersMP Account Link" required>
-
-<input type="url" name="steam" placeholder="Steam Profile Link" required>
-
-</div>
-
-
-<textarea name="vtcs" placeholder="Previous VTCs"></textarea>
-
-
-<div class="checkbox-group">
-
-<label>
-<input type="checkbox" name="game[]" value="ETS2">
-Euro Truck Simulator 2
-</label>
-
-<label>
-<input type="checkbox" name="game[]" value="ATS">
-American Truck Simulator
-</label>
-
-</div>
-
-
-<textarea name="message" placeholder="Tell us why you want to join HS Schoch Virtual..." required></textarea>
-
-<button type="submit" class="btn primary">
-Submit Application
-</button>
-
-</form>
-
-</section>
-
-
-
-<footer>
-
-<p>© 2026 HS Schoch Virtual</p>
-
-</footer>
-
-
+  <div class="page-bg"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand">HS Schoch Virtual</a>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#fleet">Fleet</a>
+        <a href="#events">Events</a>
+        <a href="#apply">Apply</a>
+        <a href="#imprint">Imprint</a>
+        <a href="https://discord.gg/n6TF2xG2eK" target="_blank" rel="noopener noreferrer">Discord</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <div class="hero-badge">ETS2 • ATS • TruckersMP • VTC</div>
+
+        <h1>
+          Modern convoys.<br />
+          Clean identity.<br />
+          HS Schoch Virtual.
+        </h1>
+
+        <p class="hero-text">
+          A modern Virtual Trucking Company built for drivers who enjoy clean presentation,
+          community events and professional convoy driving across Europe and beyond.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#apply" class="btn btn-primary">Apply Now</a>
+          <a
+            href="https://discord.gg/n6TF2xG2eK"
+            class="btn btn-secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Join Discord
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-number">ETS2</span>
+            <span class="stat-label">Main platform</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">ATS</span>
+            <span class="stat-label">Also supported</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">VTC</span>
+            <span class="stat-label">Professional identity</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">About us</span>
+          <h2>A premium-style VTC presence</h2>
+          <p>
+            HS Schoch Virtual is focused on modern presentation, organized participation
+            and a strong community feeling. The goal is simple: build a VTC that looks
+            professional, feels active and stands out on the road.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="glass-card">
+            <h3>Professional Look</h3>
+            <p>
+              A clean, modern and memorable VTC identity that feels serious without being boring.
+            </p>
+          </article>
+
+          <article class="glass-card">
+            <h3>Convoy Activity</h3>
+            <p>
+              Public events, future monthly convoys and a presence that looks good in every lineup.
+            </p>
+          </article>
+
+          <article class="glass-card">
+            <h3>Community First</h3>
+            <p>
+              Friendly drivers, structured recruitment and a Discord-centered home for the team.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="fleet" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Fleet</span>
+          <h2>Built for style on the road</h2>
+          <p>
+            Every truck in the lineup should fit the identity: modern, clean and convoy-ready.
+          </p>
+        </div>
+
+        <div class="fleet-grid">
+          <article class="fleet-card">
+            <div class="fleet-topline">01</div>
+            <h3>Scania S</h3>
+            <p>Premium road presence with a strong convoy image and modern styling.</p>
+          </article>
+
+          <article class="fleet-card">
+            <div class="fleet-topline">02</div>
+            <h3>MAN TGX</h3>
+            <p>Reliable, sleek and ideal for long-distance operations with a clean look.</p>
+          </article>
+
+          <article class="fleet-card">
+            <div class="fleet-topline">03</div>
+            <h3>DAF XG</h3>
+            <p>Comfortable and modern, perfect for drivers who want style and practicality.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="section">
+      <div class="container">
+        <div class="event-panel">
+          <div class="event-copy">
+            <span class="eyebrow">Events</span>
+            <h2>Ready for convoys and community events</h2>
+            <p>
+              HS Schoch Virtual is built around activity and presentation. Event details,
+              future convoys and announcements will be shared through our Discord community.
+            </p>
+
+            <div class="event-actions">
+              <a href="#apply" class="btn btn-primary">Apply Now</a>
+              <a
+                href="https://discord.gg/n6TF2xG2eK"
+                class="btn btn-secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Event Updates
+              </a>
+            </div>
+          </div>
+
+          <div class="event-side">
+            <div class="mini-card">
+              <span class="mini-label">Focus</span>
+              <strong>Organized convoy presence</strong>
+            </div>
+            <div class="mini-card">
+              <span class="mini-label">Community</span>
+              <strong>Recruitment & activity via Discord</strong>
+            </div>
+            <div class="mini-card">
+              <span class="mini-label">Goal</span>
+              <strong>A polished 2026 VTC experience</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="apply" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Application</span>
+          <h2>Join HS Schoch Virtual</h2>
+          <p>
+            Fill out the application below. Submissions are sent through the connected form
+            to your Formspree endpoint.
+          </p>
+        </div>
+
+        <div class="form-shell">
+          <form action="https://formspree.io/f/mzdjajwk" method="POST" class="apply-form">
+            <input type="hidden" name="_subject" value="New HS Schoch Virtual Application" />
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required />
+              </div>
+
+              <div class="form-group">
+                <label for="age">Age</label>
+                <input id="age" name="age" type="number" min="13" required />
+              </div>
+
+              <div class="form-group">
+                <label for="country">Country</label>
+                <input id="country" name="country" type="text" required />
+              </div>
+
+              <div class="form-group">
+                <label for="discord">Discord Name / ID</label>
+                <input id="discord" name="discord" type="text" required />
+              </div>
+
+              <div class="form-group">
+                <label for="tmp">TruckersMP Account Link</label>
+                <input id="tmp" name="tmp_account_link" type="url" required />
+              </div>
+
+              <div class="form-group">
+                <label for="steam">Steam Account Link</label>
+                <input id="steam" name="steam_account_link" type="url" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="vtcs">Previous VTCs</label>
+              <textarea
+                id="vtcs"
+                name="previous_vtcs"
+                rows="4"
+                placeholder="List your previous VTCs here..."
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>Which games do you play?</label>
+              <div class="checkbox-row">
+                <label class="check-item">
+                  <input type="checkbox" name="games[]" value="Euro Truck Simulator 2" />
+                  <span>Euro Truck Simulator 2</span>
+                </label>
+
+                <label class="check-item">
+                  <input type="checkbox" name="games[]" value="American Truck Simulator" />
+                  <span>American Truck Simulator</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="application_text">Application Text</label>
+              <textarea
+                id="application_text"
+                name="application_text"
+                rows="7"
+                placeholder="Tell us why you want to join HS Schoch Virtual..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit">
+              Submit Application
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="discord-banner">
+          <div>
+            <span class="eyebrow">Community</span>
+            <h2>Stay connected on Discord</h2>
+            <p>
+              Join the server for updates, announcements and future convoy communication.
+            </p>
+          </div>
+
+          <a
+            href="https://discord.gg/n6TF2xG2eK"
+            class="btn btn-secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open Discord
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="imprint" class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>HS Schoch Virtual</h3>
+        <p class="footer-text">
+          Modern ETS2 & ATS Virtual Trucking Company website.
+        </p>
+      </div>
+
+      <div class="imprint-box">
+        <h4>Imprint</h4>
+        <p>
+          Maurice Konrad<br />
+          Beethovenstraße 63<br />
+          89518 Heidenheim<br />
+          Germany
+        </p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
