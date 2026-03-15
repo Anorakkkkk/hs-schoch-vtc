@@ -325,3 +325,34 @@ a{
     padding-top:150px;
   }
 }
+
+.route-box{
+display:grid;
+grid-template-columns:1.5fr 1fr;
+gap:30px;
+align-items:center;
+}
+
+.route-map{
+width:100%;
+border-radius:20px;
+border:1px solid rgba(255,255,255,0.08);
+box-shadow:0 20px 50px rgba(0,0,0,0.25);
+}
+
+.route-info{
+background:linear-gradient(180deg,rgba(17,27,45,0.95),rgba(10,18,31,0.95));
+padding:30px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,0.08);
+}
+
+.route-info h3{
+margin-bottom:10px;
+font-size:24px;
+}
+
+.route-info p{
+color:#c2cfdf;
+margin-bottom:20px;
+}
