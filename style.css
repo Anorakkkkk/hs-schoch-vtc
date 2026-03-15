@@ -574,3 +574,94 @@ a {
     padding: 22px;
   }
 }
+
+.site-header {
+  transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.site-header.scrolled {
+  transform: translateY(4px);
+}
+
+.site-header.scrolled .nav-wrap {
+  background: rgba(8, 14, 30, 0.88);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.42);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.mouse-glow {
+  position: fixed;
+  width: 380px;
+  height: 380px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: -1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(124, 92, 255, 0.18) 0%, rgba(78, 167, 255, 0.10) 28%, rgba(0, 0, 0, 0) 68%);
+  filter: blur(28px);
+  transition: left 0.08s linear, top 0.08s linear;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.glass-card,
+.fleet-card,
+.mini-card,
+.stat-card,
+.discord-banner,
+.form-shell,
+.event-panel {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+  will-change: transform;
+}
+
+.glass-card:hover,
+.fleet-card:hover,
+.mini-card:hover,
+.stat-card:hover,
+.discord-banner:hover,
+.form-shell:hover {
+  border-color: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 22px 65px rgba(0, 0, 0, 0.42);
+}
+
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.16) 45%, transparent 100%);
+  transform: translateX(-120%);
+  transition: transform 0.6s ease;
+}
+
+.btn:hover::after {
+  transform: translateX(120%);
+}
+
+@media (max-width: 768px) {
+  .mouse-glow {
+    width: 240px;
+    height: 240px;
+    filter: blur(22px);
+  }
+}
