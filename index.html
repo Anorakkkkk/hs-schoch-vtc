@@ -4,345 +4,213 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HS Schoch Virtual</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #0b0f16;
-      color: #ffffff;
-      line-height: 1.6;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .navbar {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 18px 8%;
-      background: rgba(8, 12, 20, 0.92);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
-
-    .logo {
-      font-size: 1.4rem;
-      font-weight: bold;
-      letter-spacing: 0.5px;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 24px;
-      list-style: none;
-    }
-
-    .nav-links a {
-      color: #d6dbe3;
-      transition: 0.2s ease;
-      font-size: 0.95rem;
-    }
-
-    .nav-links a:hover {
-      color: #ffffff;
-    }
-
-    .hero {
-      min-height: 92vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 0 8%;
-      background:
-        linear-gradient(rgba(5, 8, 14, 0.65), rgba(5, 8, 14, 0.85)),
-        url("truck-bg.jpg") center/cover no-repeat;
-    }
-
-    .hero-content {
-      max-width: 900px;
-    }
-
-    .hero h1 {
-      font-size: 3.4rem;
-      margin-bottom: 18px;
-      line-height: 1.1;
-    }
-
-    .hero p {
-      font-size: 1.1rem;
-      color: #c6ccd6;
-      max-width: 720px;
-      margin: 0 auto 30px;
-    }
-
-    .hero-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      padding: 14px 24px;
-      border-radius: 12px;
-      font-weight: bold;
-      transition: 0.2s ease;
-      display: inline-block;
-    }
-
-    .btn-primary {
-      background: #ff3b30;
-      color: white;
-    }
-
-    .btn-primary:hover {
-      background: #ff564d;
-      transform: translateY(-2px);
-    }
-
-    .btn-secondary {
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.12);
-      color: white;
-    }
-
-    .btn-secondary:hover {
-      background: rgba(255,255,255,0.14);
-      transform: translateY(-2px);
-    }
-
-    section {
-      padding: 90px 8%;
-    }
-
-    .section-title {
-      font-size: 2rem;
-      margin-bottom: 14px;
-      text-align: center;
-    }
-
-    .section-subtitle {
-      text-align: center;
-      color: #b7bec9;
-      max-width: 700px;
-      margin: 0 auto 50px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 22px;
-    }
-
-    .card {
-      background: #131a24;
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 18px;
-      padding: 24px;
-      transition: 0.2s ease;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.18);
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-      border-color: rgba(255,255,255,0.12);
-    }
-
-    .card h3 {
-      margin-bottom: 10px;
-      font-size: 1.15rem;
-    }
-
-    .card p {
-      color: #bfc6d0;
-      font-size: 0.96rem;
-    }
-
-    .highlight-box {
-      background: linear-gradient(135deg, #131a24, #0e141d);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 20px;
-      padding: 32px;
-      max-width: 950px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .highlight-box p {
-      color: #c0c8d3;
-      margin-bottom: 22px;
-    }
-
-    .footer {
-      text-align: center;
-      padding: 30px 8%;
-      border-top: 1px solid rgba(255,255,255,0.08);
-      color: #9ca6b3;
-      font-size: 0.9rem;
-      background: #090d13;
-    }
-
-    @media (max-width: 768px) {
-      .navbar {
-        flex-direction: column;
-        gap: 14px;
-      }
-
-      .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 14px;
-      }
-
-      .hero h1 {
-        font-size: 2.4rem;
-      }
-
-      .hero p {
-        font-size: 1rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <nav class="navbar">
-    <div class="logo">HS Schoch Virtual</div>
-    <ul class="nav-links">
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#fleet">Fleet</a></li>
-      <li><a href="#team">Team</a></li>
-      <li><a href="#events">Events</a></li>
-      <li><a href="#apply">Apply</a></li>
-      <li><a href="https://discord.gg/YOURINVITE" target="_blank">Discord</a></li>
-    </ul>
-  </nav>
+
+<div class="nav-logo">
+HS Schoch Virtual
+</div>
+
+<div class="nav-links">
+
+<a href="#">Home</a>
+
+<a href="#about">About Us</a>
+
+<a href="#fleet">Fleet</a>
+
+<a href="#team">Team</a>
+
+<a href="#events">Events</a>
+
+<a href="#apply">Apply</a>
+
+<a href="DEIN_DISCORD_LINK" target="_blank">Discord</a>
+
+</div>
+
+</nav>
 
   <header class="hero">
+    <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1>Drive with precision.<br>Represent HS Schoch Virtual.</h1>
-      <p>
-        A modern ETS2 virtual trucking company focused on clean convoys,
-        professional driving and a strong community on the road.
+      <p class="hero-tag">EURO TRUCK SIMULATOR 2 · TRUCKERSMP · VTC</p>
+      <h1>HS Schoch Virtual</h1>
+      <p class="hero-text">
+        Professional TruckersMP Virtual Trucking Company with convoy events,
+        community spirit and a modern ETS2 experience.
       </p>
+
       <div class="hero-buttons">
-        <a href="#apply" class="btn btn-primary">Join VTC</a>
-        <a href="https://discord.gg/YOURINVITE" target="_blank" class="btn btn-secondary">Join Discord</a>
+        <a href="#apply" class="btn btn-primary">Apply Now</a>
+        <a href="https://discord.gg/n6TF2xG2eK" class="btn btn-secondary" target="_blank">Join Discord</a>
       </div>
     </div>
   </header>
 
-  <section id="about">
-    <h2 class="section-title">About Us</h2>
-    <p class="section-subtitle">
-      HS Schoch Virtual is an ETS2 VTC built for drivers who enjoy realistic trucking,
-      organized convoys and a professional but relaxed atmosphere.
-    </p>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Professional Style</h3>
-        <p>We focus on a clean appearance, reliable driving and a serious VTC identity.</p>
-      </div>
-      <div class="card">
-        <h3>Convoy Activity</h3>
-        <p>Take part in public and community convoys with a structured and polished presence.</p>
-      </div>
-      <div class="card">
-        <h3>Community First</h3>
-        <p>We want to build a friendly team where every driver matters and grows with the VTC.</p>
-      </div>
+  <section class="stats">
+    <div class="stat-card">
+      <h3>Professional</h3>
+      <p>Modern and organized VTC presentation</p>
+    </div>
+    <div class="stat-card">
+      <h3>Convoys</h3>
+      <p>Regular public and private event participation</p>
+    </div>
+    <div class="stat-card">
+      <h3>Community</h3>
+      <p>Friendly drivers, teamwork and activity</p>
     </div>
   </section>
 
-  <section id="fleet">
-    <h2 class="section-title">Our Fleet</h2>
-    <p class="section-subtitle">
-      Our fleet represents the identity of HS Schoch Virtual with clean style and strong road presence.
-    </p>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Mercedes-Benz</h3>
-        <p>Modern, premium and perfect for a professional VTC image on every convoy route.</p>
-      </div>
-      <div class="card">
-        <h3>Scania</h3>
-        <p>Powerful, popular and ideal for long-distance operations across Europe.</p>
-      </div>
-      <div class="card">
-        <h3>MAN / Volvo</h3>
-        <p>Reliable alternatives for drivers who want comfort, style and strong performance.</p>
-      </div>
+  <section id="about" class="section">
+    <div class="section-header">
+      <span class="section-kicker">ABOUT US</span>
+      <h2>Driven by passion for virtual trucking</h2>
     </div>
-  </section>
-
-  <section id="team">
-    <h2 class="section-title">Team</h2>
-    <p class="section-subtitle">
-      A growing VTC starts with the right people. As HS Schoch Virtual expands, this section will present our management and drivers.
-    </p>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Founder</h3>
-        <p>Leading the project, shaping the VTC design and building the community from the ground up.</p>
-      </div>
-      <div class="card">
-        <h3>Event Management</h3>
-        <p>Planning convoy participation, route organization and future VTC activities.</p>
-      </div>
-      <div class="card">
-        <h3>Drivers</h3>
-        <p>The core of the VTC — representing HS Schoch Virtual on every journey and event.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="events">
-    <h2 class="section-title">Events & Convoys</h2>
-    <p class="section-subtitle">
-      Join us on the road for community convoys, public events and future monthly VTC drives.
-    </p>
-
-    <div class="highlight-box">
+    <div class="content-card">
       <p>
-        We are building a professional event presence with convoy planning,
-        scheduled participation and a clean presentation for every trip.
+        HS Schoch Virtual is a professional ETS2 Virtual Trucking Company inspired
+        by a realistic trucking style and a strong community mindset. We focus on
+        high-quality convoys, clean presentation and an enjoyable TruckersMP experience.
       </p>
-      <a href="https://discord.gg/YOURINVITE" target="_blank" class="btn btn-primary">View Event Updates</a>
     </div>
   </section>
 
-  <section id="apply">
-    <h2 class="section-title">Driver Recruitment</h2>
-    <p class="section-subtitle">
-      Want to be part of HS Schoch Virtual? Join our Discord and apply to become one of the first drivers in our VTC.
-    </p>
+  <section id="fleet" class="section">
 
-    <div class="highlight-box">
+<div class="section-header">
+<span class="section-kicker">FLEET</span>
+<h2>Our Trucks</h2>
+</div>
+
+<div class="fleet-grid">
+
+<img src="https://i.imgur.com/lfUUKPN.png">
+<img src="https://i.imgur.com/lfUUKPN.png">
+<img src="https://i.imgur.com/lfUUKPN.png">
+
+</div>
+
+</section>
+
+  <section id="team" class="section">
+
+<div class="section-header">
+<span class="section-kicker">TEAM</span>
+<h2>Our Team</h2>
+</div>
+
+<div class="content-card">
+
+<p>
+Founder / Owner  
+HS Schoch Virtual
+</p>
+
+<p>
+More team members will be added as the VTC grows.
+</p>
+
+</div>
+
+</section>
+
+  <section id="events" class="section">
+  <div class="section-header">
+    <span class="section-kicker">NEXT EVENT</span>
+    <h2>Upcoming Convoy</h2>
+  </div>
+
+  <div class="content-card">
+    <h3>HS Schoch Community Convoy</h3>
+    <p>Date: Coming soon</p>
+    <p>Departure: To be announced</p>
+    <p>Destination: To be announced</p>
+    <p>Server: TruckersMP Event Server / Public Server</p>
+    <br>
+    <a href="#" class="btn btn-primary">View Event</a>
+  </div>
+</section>
+
+  <section class="section route">
+
+<div class="section-header">
+<span class="section-kicker">CONVOY ROUTE</span>
+<h2>Example Convoy Route</h2>
+</div>
+
+<div class="route-box">
+
+<img src="https://i.imgur.com/9R7jG5T.png" class="route-map">
+
+<div class="route-info">
+
+<h3>HS Schoch Monthly Convoy</h3>
+
+<p>
+Start: Hamburg<br>
+Destination: Munich<br>
+Distance: ~780 km
+</p>
+
+<a href="#" class="btn btn-primary">View Event</a>
+
+</div>
+
+</div>
+
+</section>
+
+  <section id="apply" class="section">
+  <div class="section-header">
+    <span class="section-kicker">APPLICATION</span>
+    <h2>Join HS Schoch Virtual</h2>
+  </div>
+
+  <div class="card-grid">
+    <div class="content-card">
+      <h3>What we offer</h3>
       <p>
-        We are looking for active, friendly and reliable ETS2 drivers who want to help shape a modern and growing VTC.
+        We are building a professional ETS2 VTC with a clean design, convoy participation
+        and a friendly community from the ground up.
       </p>
-      <a href="https://discord.gg/YOURINVITE" target="_blank" class="btn btn-primary">Apply via Discord</a>
+    </div>
+
+    <div class="content-card">
+      <h3>How to apply</h3>
+      <p>
+        Want to join HS Schoch Virtual? Apply through our Discord and get in touch with us directly.
+      </p>
+      <ul class="requirements">
+        <li>ETS2 + TruckersMP</li>
+        <li>Friendly behaviour</li>
+        <li>Interest in convoys</li>
+      </ul>
+      <a href="https://discord.gg/n6TF2xG2eK" class="btn btn-primary" target="_blank">Apply via Discord</a>
+    </div>
+  </div>
+</section>
+
+  <section id="discord" class="section">
+    <div class="section-header">
+      <span class="section-kicker">COMMUNITY</span>
+      <h2>Join our Discord</h2>
+    </div>
+
+    <div class="content-card discord-box">
+      <p>
+        Stay connected with our drivers, get convoy updates and become part of the HS Schoch Virtual community.
+      </p>
+      <a href="https://discord.gg/" class="btn btn-secondary" target="_blank">Join Discord</a>
     </div>
   </section>
 
   <footer class="footer">
-    © 2026 HS Schoch Virtual — All rights reserved.
+    <p>© 2026 HS Schoch Virtual. All rights reserved.</p>
   </footer>
 
 </body>
