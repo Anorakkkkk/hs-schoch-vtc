@@ -1,0 +1,51 @@
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#0f172a;
+color:white;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:url("https://images.unsplash.com/photo-1601584115197-04ecc0da31d7") center/cover;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+padding:12px 25px;
+background:#ff6a00;
+color:white;
+text-decoration:none;
+margin:10px;
+border-radius:6px;
+font-weight:bold;
+}
+
+.btn.discord{
+background:#5865F2;
+}
+
+section{
+padding:80px;
+max-width:1000px;
+margin:auto;
+}
+
+h2{
+font-size:32px;
+margin-bottom:20px;
+}
