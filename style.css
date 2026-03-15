@@ -665,3 +665,9 @@ a {
     filter: blur(22px);
   }
 }
+
+.footer-links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
