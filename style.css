@@ -5,6 +5,16 @@ background:#0f172a;
 color:white;
 }
 
+.hero h1{
+font-size:70px;
+font-weight:700;
+}
+
+.hero p{
+font-size:22px;
+opacity:0.9;
+}
+
 .hero{
 height:100vh;
 display:flex;
