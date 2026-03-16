@@ -3,268 +3,285 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="favicon.png">
   <title>HS Schoch Virtual</title>
-  <meta
-    name="description"
-    content="HS Schoch Virtual - Professional ETS2 & ATS Virtual Trucking Company."
-  />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet"
-  />
+  <meta name="description" content="HS Schoch Virtual - ETS2 & ATS Virtual Trucking Company." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="page-bg"></div>
 
   <header class="site-header">
-    <div class="container nav-wrap">
-  <a href="#top" class="brand">
-    <img src="logo.png" alt="HS Schoch Virtual Logo">
-  </a>
+    <div class="container nav-bar">
+      <a href="#home" class="brand">
+        <img src="images/logo.png" alt="HS Schoch Virtual Logo" class="brand-logo">
+        <div class="brand-text">
+          <span class="brand-title">HS Schoch Virtual</span>
+          <span class="brand-subtitle">ETS2 • ATS • VTC</span>
+        </div>
+      </a>
 
-  <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
-    ☰ Menu
-  </button>
-
-  <nav class="nav" id="mainNav">
-    <a href="#about">About</a>
-    <a href="#fleet">Fleet</a>
-    <a href="#events">Events</a>
-    <a href="#apply">Apply</a>
-    <a href="#imprint">Imprint</a>
-    <a href="https://discord.gg/n6TF2xG2eK" target="_blank" rel="noopener noreferrer">Discord</a>
-  </nav>
-</div>
+      <nav class="nav-links">
+        <a href="#convoy">Convoy</a>
+        <a href="#about">About</a>
+        <a href="#fleet">Fleet</a>
+        <a href="#team">Team</a>
+        <a href="#apply">Apply</a>
+        <a href="#discord">Discord</a>
+      </nav>
+    </div>
   </header>
 
-  <main id="top">
+  <main id="home">
     <section class="hero">
       <div class="hero-overlay"></div>
-      <div class="container hero-inner">
-        <div class="hero-badge">ETS2 • ATS • TruckersMP • VTC</div>
 
-        <h1>
-          Modern convoys.<br />
-          Clean identity.<br />
-          .
-        </h1>
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <div class="hero-tag">HS Schoch Virtual Trucking Company</div>
 
-        <p class="hero-text">
-          A modern Virtual Trucking Company built for drivers who enjoy clean presentation,
-          community events and professional convoy driving across Europe and beyond.
-        </p>
+          <h1>
+            Convoys.<br>
+            Community.<br>
+            Real VTC Style.
+          </h1>
 
-        <div class="hero-actions">
-          <a href="#apply" class="btn btn-primary">Apply Now</a>
-          <a
-            href="https://discord.gg/n6TF2xG2eK"
-            class="btn btn-secondary"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Join Discord
-          </a>
+          <p class="hero-text">
+            HS Schoch Virtual is a fan-made ETS2 and ATS Virtual Trucking Company focused on clean presentation,
+            convoy participation and a friendly but professional community on the road.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#apply" class="btn btn-primary">Apply Now</a>
+            <a href="https://discord.gg/n6TF2xG2eK" target="_blank" rel="noopener noreferrer" class="btn btn-discord">Join Discord</a>
+          </div>
+
+          <div class="hero-mini-stats">
+            <div class="mini-stat">
+              <strong>Founded</strong>
+              <span>2026</span>
+            </div>
+            <div class="mini-stat">
+              <strong>Games</strong>
+              <span>ETS2 / ATS</span>
+            </div>
+            <div class="mini-stat">
+              <strong>Focus</strong>
+              <span>Convoys & Community</span>
+            </div>
+          </div>
         </div>
 
-        <div class="hero-stats">
-          <div class="stat-card">
-            <span class="stat-number">ETS2</span>
-            <span class="stat-label">Main platform</span>
+        <div class="hero-right">
+          <div class="next-convoy-card" id="convoy">
+            <span class="card-label">Next Convoy</span>
+            <h2>HS Schoch Community Convoy</h2>
+
+            <ul class="convoy-list">
+              <li><span>Date</span><strong>Coming soon</strong></li>
+              <li><span>Departure</span><strong>To be announced</strong></li>
+              <li><span>Destination</span><strong>To be announced</strong></li>
+              <li><span>Server</span><strong>TruckersMP</strong></li>
+            </ul>
+
+            <a href="https://discord.gg/n6TF2xG2eK" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              View Updates
+            </a>
           </div>
-          <div class="stat-card">
-            <span class="stat-number">ATS</span>
-            <span class="stat-label">Also supported</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number">VTC</span>
-            <span class="stat-label">Professional identity</span>
-          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-strip">
+      <div class="container stats-grid">
+        <div class="stat-box">
+          <span class="stat-number">ETS2</span>
+          <span class="stat-label">Main platform</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">ATS</span>
+          <span class="stat-label">Also supported</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">VTC</span>
+          <span class="stat-label">Community identity</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">TMP</span>
+          <span class="stat-label">Convoy participation</span>
         </div>
       </div>
     </section>
 
     <section id="about" class="section">
       <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">About us</span>
-          <h2>A premium-style VTC presence</h2>
+        <div class="section-head">
+          <span class="section-kicker">About us</span>
+          <h2>Built like a real VTC, not a generic template</h2>
           <p>
-             is focused on modern presentation, organized participation
-            and a strong community feeling. The goal is simple: build a VTC that looks
-            professional, feels active and stands out on the road.
+            HS Schoch Virtual is designed to feel like a proper trucking community:
+            convoy-focused, driver-friendly and visually inspired by real road presence.
+            The goal is to create a recognizable VTC with clean style and active participation.
           </p>
         </div>
 
-        <div class="feature-grid">
-          <article class="glass-card">
-            <h3>Professional Look</h3>
+        <div class="about-grid">
+          <article class="content-card">
+            <h3>Convoy Participation</h3>
             <p>
-              A clean, modern and memorable VTC identity that feels serious without being boring.
+              Public convoys, community events and a structured presence on the road.
             </p>
           </article>
 
-          <article class="glass-card">
-            <h3>Convoy Activity</h3>
+          <article class="content-card">
+            <h3>Professional Presentation</h3>
             <p>
-              Public events, future monthly convoys and a presence that looks good in every lineup.
+              Clean branding, modern design and a VTC identity that stands out in TruckersMP.
             </p>
           </article>
 
-          <article class="glass-card">
-            <h3>Community First</h3>
+          <article class="content-card">
+            <h3>Community Driven</h3>
             <p>
-              Friendly drivers, structured recruitment and a Discord-centered home for the team.
+              Drivers, Discord activity and a relaxed but organized atmosphere.
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="fleet" class="section section-alt">
+    <section id="fleet" class="section section-dark">
       <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">Fleet</span>
-          <h2>Built for style on the road</h2>
+        <div class="section-head">
+          <span class="section-kicker">Fleet</span>
+          <h2>Our trucks</h2>
           <p>
-            Every truck in the lineup should fit the identity: modern, clean and convoy-ready.
+            The fleet should match the identity: modern, clean and ready for convoys.
           </p>
         </div>
 
         <div class="fleet-grid">
           <article class="fleet-card">
-            <div class="fleet-topline">01</div>
-            <h3>Scania S</h3>
-            <p>Premium road presence with a strong convoy image and modern styling.</p>
+            <div class="fleet-image fleet-scania"></div>
+            <div class="fleet-content">
+              <h3>Scania S</h3>
+              <p>Premium road presence and ideal for modern VTC convoys.</p>
+            </div>
           </article>
 
           <article class="fleet-card">
-            <div class="fleet-topline">02</div>
-            <h3>MAN TGX</h3>
-            <p>Reliable, sleek and ideal for long-distance operations with a clean look.</p>
+            <div class="fleet-image fleet-man"></div>
+            <div class="fleet-content">
+              <h3>MAN TGX</h3>
+              <p>Reliable, clean and perfect for long-distance community drives.</p>
+            </div>
           </article>
 
           <article class="fleet-card">
-            <div class="fleet-topline">03</div>
-            <h3>DAF XG</h3>
-            <p>Comfortable and modern, perfect for drivers who want style and practicality.</p>
+            <div class="fleet-image fleet-daf"></div>
+            <div class="fleet-content">
+              <h3>DAF XG</h3>
+              <p>Modern styling and strong comfort for convoy participation.</p>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="events" class="section">
+    <section id="team" class="section">
       <div class="container">
-        <div class="event-panel">
-          <div class="event-copy">
-            <span class="eyebrow">Events</span>
-            <h2>Ready for convoys and community events</h2>
-            <p>
-               is built around activity and presentation. Event details,
-              future convoys and announcements will be shared through our Discord community.
-            </p>
-
-            <div class="event-actions">
-              <a href="#apply" class="btn btn-primary">Apply Now</a>
-              <a
-                href="https://discord.gg/n6TF2xG2eK"
-                class="btn btn-secondary"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Event Updates
-              </a>
-            </div>
-          </div>
-
-          <div class="event-side">
-            <div class="mini-card">
-              <span class="mini-label">Focus</span>
-              <strong>Organized convoy presence</strong>
-            </div>
-            <div class="mini-card">
-              <span class="mini-label">Community</span>
-              <strong>Recruitment & activity via Discord</strong>
-            </div>
-            <div class="mini-card">
-              <span class="mini-label">Goal</span>
-              <strong>A polished 2026 VTC experience</strong>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="apply" class="section section-alt">
-      <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">Application</span>
-          <h2>Join </h2>
+        <div class="section-head">
+          <span class="section-kicker">Team</span>
+          <h2>Who keeps the VTC moving</h2>
           <p>
-            Fill out the application below. Submissions are sent through the connected form
-            to your Formspree endpoint.
+            A VTC is more than trucks. It needs drivers, organization and activity.
           </p>
         </div>
 
-        <div class="form-shell">
+        <div class="team-grid">
+          <article class="team-card">
+            <span class="team-role">Founder</span>
+            <h3>Maurice Konrad</h3>
+            <p>Building HS Schoch Virtual from the ground up with a focus on design, community and convoy identity.</p>
+          </article>
+
+          <article class="team-card">
+            <span class="team-role">Event Management</span>
+            <h3>Open Position</h3>
+            <p>Help plan convoy participation, announcements and future monthly events.</p>
+          </article>
+
+          <article class="team-card">
+            <span class="team-role">Drivers</span>
+            <h3>Recruiting</h3>
+            <p>Join the road, represent the VTC and become part of the first generation of HS Schoch Virtual drivers.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="apply" class="section section-dark">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">Application</span>
+          <h2>Join HS Schoch Virtual</h2>
+          <p>
+            Want to become part of the VTC? Fill out the form below. Applications are sent directly through Formspree.
+          </p>
+        </div>
+
+        <div class="form-wrapper">
           <form action="https://formspree.io/f/mzdjajwk" method="POST" class="apply-form">
-            <input type="hidden" name="_subject" value="New  Application" />
+            <input type="hidden" name="_subject" value="New HS Schoch Virtual Application">
 
             <div class="form-grid">
               <div class="form-group">
                 <label for="name">Name</label>
-                <input id="name" name="name" type="text" required />
+                <input id="name" name="name" type="text" required>
               </div>
 
               <div class="form-group">
                 <label for="age">Age</label>
-                <input id="age" name="age" type="number" min="13" required />
+                <input id="age" name="age" type="number" min="13" required>
               </div>
 
               <div class="form-group">
                 <label for="country">Country</label>
-                <input id="country" name="country" type="text" required />
+                <input id="country" name="country" type="text" required>
               </div>
 
               <div class="form-group">
                 <label for="discord">Discord Name / ID</label>
-                <input id="discord" name="discord" type="text" required />
+                <input id="discord" name="discord" type="text" required>
               </div>
 
               <div class="form-group">
                 <label for="tmp">TruckersMP Account Link</label>
-                <input id="tmp" name="tmp_account_link" type="url" required />
+                <input id="tmp" name="tmp_account_link" type="url" required>
               </div>
 
               <div class="form-group">
-                <label for="steam">Steam Account Link</label>
-                <input id="steam" name="steam_account_link" type="url" required />
+                <label for="steam">Steam Profile Link</label>
+                <input id="steam" name="steam_account_link" type="url" required>
               </div>
             </div>
 
             <div class="form-group">
               <label for="vtcs">Previous VTCs</label>
-              <textarea
-                id="vtcs"
-                name="previous_vtcs"
-                rows="4"
-                placeholder="List your previous VTCs here..."
-              ></textarea>
+              <textarea id="vtcs" name="previous_vtcs" rows="4" placeholder="List any previous VTCs here..."></textarea>
             </div>
 
             <div class="form-group">
               <label>Which games do you play?</label>
               <div class="checkbox-row">
-                <label class="check-item">
-                  <input type="checkbox" name="games[]" value="Euro Truck Simulator 2" />
+                <label class="checkbox-item">
+                  <input type="checkbox" name="games[]" value="Euro Truck Simulator 2">
                   <span>Euro Truck Simulator 2</span>
                 </label>
 
-                <label class="check-item">
-                  <input type="checkbox" name="games[]" value="American Truck Simulator" />
+                <label class="checkbox-item">
+                  <input type="checkbox" name="games[]" value="American Truck Simulator">
                   <span>American Truck Simulator</span>
                 </label>
               </div>
@@ -272,76 +289,54 @@
 
             <div class="form-group">
               <label for="application_text">Application Text</label>
-              <textarea
-                id="application_text"
-                name="application_text"
-                rows="7"
-                placeholder="Tell us why you want to join ..."
-                required
-              ></textarea>
+              <textarea id="application_text" name="application_text" rows="7" placeholder="Tell us why you want to join HS Schoch Virtual..." required></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-submit">
-              Submit Application
-            </button>
+            <button type="submit" class="btn btn-primary submit-btn">Submit Application</button>
           </form>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section id="discord" class="section">
       <div class="container">
-        <div class="discord-banner">
+        <div class="discord-box">
           <div>
-            <span class="eyebrow">Community</span>
-            <h2>Stay connected on Discord</h2>
+            <span class="section-kicker">Discord</span>
+            <h2>Stay connected with the community</h2>
             <p>
-              Join the server for updates, announcements and future convoy communication.
+              Join our Discord for applications, updates, convoy planning and future announcements.
             </p>
           </div>
 
-          <a
-            href="https://discord.gg/n6TF2xG2eK"
-            class="btn btn-secondary"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Open Discord
+          <a href="https://discord.gg/n6TF2xG2eK" target="_blank" rel="noopener noreferrer" class="btn btn-discord">
+            Join Discord
           </a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer id="imprint" class="footer">
+  <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <h3></h3>
-        <p class="footer-text">
-          Modern ETS2 & ATS Virtual Trucking Company website.
+        <h3>HS Schoch Virtual</h3>
+        <p class="footer-note">
+          Fan-made virtual trucking community. Not affiliated with HS Schoch GmbH.
         </p>
       </div>
 
-      <p>© 2026 </p>
-
- <div class="footer-links">
-  <a href="privacy.html">Privacy Policy</a>
-  <span>|</span>
-  <a href="imprint.html">Imprint</a>
-</div>
-
-      <div class="imprint-box">
+      <div class="footer-imprint">
         <h4>Imprint</h4>
         <p>
-          Maurice Konrad<br />
-          Beethovenstraße 63<br />
-          89518 Heidenheim<br />
+          Maurice Konrad<br>
+          Beethovenstraße 63<br>
+          89518 Heidenheim<br>
           Germany
         </p>
       </div>
     </div>
   </footer>
+
 </body>
 </html>
-
-<script src="script.js"></script>
